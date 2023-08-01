@@ -20,7 +20,7 @@ export function AppLayout({ title, children }) {
     <div className={styles.layout} data-app-version={CURRENT_VERSION}>
       <UpdateNotice user={user} config={config} />
       <Head>
-        <title>{title ? `${title} | umami` : 'umami'}</title>
+        <title>{title ? `${title} | web metrics` : 'web metrics'}</title>
       </Head>
       <nav className={styles.nav}>
         <NavBar />
