@@ -1,6 +1,7 @@
 import { Icon, Text, Row, Column } from 'react-basics';
 import Link from 'next/link';
 import classNames from 'classnames';
+import Image from 'next/image';
 import Icons from 'components/icons';
 import ThemeButton from 'components/input/ThemeButton';
 import LanguageButton from 'components/input/LanguageButton';
@@ -26,10 +27,17 @@ export function NavBar() {
       <Row>
         <Column className={styles.left}>
           <div className={styles.logo}>
-            <Icon size="lg">
+            {/* <Icon size="lg">
               <Icons.Logo />
+            </Icon> */}
+            <Icon size="lg">
+             <Image
+                src="/images/logo/web-metrics-favicon.png"
+                alt="Logo"
+                width={30}
+              />
             </Icon>
-            <Text className={styles.text}>umami</Text>
+            <Text className={styles.text}> Web <span className={styles.span}>Metrics</span></Text>
           </div>
           <div className={styles.links}>
             {links.map(({ url, label }) => {
