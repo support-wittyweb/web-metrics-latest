@@ -14,7 +14,7 @@ import useApi from 'hooks/useApi';
 import { setUser } from 'store/app';
 import { setClientAuthToken } from 'lib/client';
 import useMessages from 'hooks/useMessages';
-import Logo from 'assets/logo.svg';
+import Image from 'next/image';
 import styles from './LoginForm.module.css';
 
 export function LoginForm() {
