@@ -14,7 +14,7 @@
   font-weight: 700;
   color: var(--font-color100) !important;
 }
-
+.span{color: #ffc107;}
 .buttons {
   display: flex;
   flex-direction: row;
