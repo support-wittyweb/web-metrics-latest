@@ -5,6 +5,7 @@ export function EventsTable({ websiteId, ...props }) {
   const { formatMessage, labels } = useMessages();
 
   function handleDataLoad(data) {
+    // props.onDataLoad(data);
     props.onDataLoad?.(data);
   }
 
